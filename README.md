@@ -346,7 +346,9 @@
                   <h4 className="font-medium mb-1">Responsabilidades</h4>
                   <ul>
                     {service.responsibilities.map((r,i) => (
-                      <li key={i} className="pl-4 relative text-sm mb-1 animate-[fadeIn_0.3s_both]" style={{'--delay': `${i*80}ms`}}>
+                      {% raw %}
+                       <li key={i} className="pl-4 relative text-sm mb-1 animate-[fadeIn_0.3s_both]" style={{'--delay': `${i*80}ms`}}>
+                         {% endraw %}
                         <span className="absolute left-0 top-1.5 w-1 h-1 rounded-full bg-indigo-500"></span>
                         {r}
                       </li>
